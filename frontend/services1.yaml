@@ -1,0 +1,12 @@
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: Checkpoint OrchestrationServicesservices1
+    spec:
+      type: ClusterIP
+      selector:
+        app: backend
+      ports:
+      - port: 50
+        targetPort: 30000
+    
